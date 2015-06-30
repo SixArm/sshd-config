@@ -65,7 +65,7 @@ AcceptEnv LANG LC_*
 # Client Alive messages are sent over the encrypted link, so they
 # cannot be blocked or spoofed by a firewall. These settings tell
 # the server to check the client every 30 seconds. If the client
-# does not respond 40 times in a row then the session is closed.
+# does not respond 120 times in a row then the session is closed.
 # This allows for up to 60 minutes of network interruption.
 #
 ClientAliveInterval 30
