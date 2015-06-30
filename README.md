@@ -1,4 +1,4 @@
-# SixArm.com » SSH » sshd_config file
+# SixArm.com » SSHd » sshd_config file
 
 * Repo: <http://github.com/sixarm/sixarm_sshd_config>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
