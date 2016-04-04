@@ -1,7 +1,5 @@
 # SixArm.com » SSHd » sshd_config file
 
-* Repo: <http://github.com/sixarm/sixarm_sshd_config>
-* Email: Joel Parker Henderson, <joel@sixarm.com>
 
 ## Introduction
 
@@ -11,14 +9,43 @@ Our SSH configuration files are in two repos:
 
   * `sixarm_sshd_config` for the server configuration.
 
-Take what you need, suggest updates as you can, and when you
-do your own Gemfile we recommend specifying your gem versions.
+Take what you need. We welcome suggestions, feedback, and pull requests.
 
-Want to help? We're happy to get pull requests.
+
+## Install
+
+To install this system-wide on a typical Unix system, you must have root administration permissions or similar kinds of sudo permissions.
+
+Warning: doing this is dangerous and can seriously affect your systems. If you don't understand the instructions below, then ask for help.
+
+Create your SSH directory as needed:
+
+    mkdir -p /etc/ssh
+
+Do you already have an SSH config file?
+
+    ls /etc/ssh/sshd_config
+
+If so, then you may want to make a backup:
+
+    cp /etc/ssh/sshd_config /etc/ssh/ssh_config.backup
+
+Clone:
+
+    git clone https://github.com/sixarm/sixarm_sshd_config
+
+Copy this content to your own SSH config file:
+
+    cat sixarm_sshd_config/sshd_config >> /etc/ssh/sshd_config
+
+Edit as you like, using your own favorite editor:
+
+    edit /etc/ssh/sshd_config
 
 
 ## Changes
 
+* 2016-04-03 2.0.0 Improve usability
 * 2015-06-30 1.0.0 Publish
 
 

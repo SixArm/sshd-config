@@ -14,6 +14,15 @@
 # Thanks:
 #
 #  * http://www.noah.org/wiki/SSH_config
+#
+# ## Tracking ##
+#
+# Content: sshd_config
+# Version: 2.0.0
+# Created: 2015-06-30
+# Updated: 2016-04-03
+# License: GPL
+# Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 
 # AcceptEnv
