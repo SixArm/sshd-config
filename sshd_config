@@ -1,5 +1,24 @@
 ##
-# SSHd config
+# Sixarm.com ➤ Secure Shell daemon (SSHd) ➤ sshd_config file
+#
+# ## Installation ##
+#
+# The SSHd configuration file `sshd_config` is typically either 
+# for the system (i.e. all users) or your own account (i.e. one user).
+#
+# For the system:
+#
+#     mkdir -p /etc/ssh
+#     cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+#     cp sshd_config /etc/ssh/sshd_config
+#
+# For the user:
+#
+#     mkdir -p ~/.ssh
+#     cp ~/.ssh/sshd_config ~/.ssh/sshd_config.backup
+#     cp sshd_config ~/.ssh/sshd_config
+#
+# ## Help ##
 #
 # For details about these settings:
 #
@@ -8,8 +27,24 @@
 #
 # Links to the man pages:
 #
-#  * http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5
-#  * http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/sshd_config.5
+#   * http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/ssh_config.5
+#   * http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man5/sshd_config.5
+#
+# ## Organization ##
+#
+# SSH historically expected all its configuration information in one file.
+#
+# We prefer to organize our config files by using directories.
+#
+# For the system:
+#
+#     mkdir -p /etc/ssh/ssh_config.d
+#     mkdir -p /etc/ssh/sshd_config.d
+#
+# For the user:
+#
+#     mkdir -p ~/.ssh/ssh_config.d
+#     mkdir -p ~/.ssh/sshd_config.d
 #
 # Thanks:
 #
@@ -21,7 +56,7 @@
 # Version: 3.0.0
 # Created: 2015-06-30
 # Updated: 2022-06-27
-# License: GPL
+# License: GPL-2.0-or-later, or for a custom license contact us
 # Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
 ##
 
