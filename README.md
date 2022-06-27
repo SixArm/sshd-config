@@ -1,22 +1,22 @@
-# SixArm.com » SSHd » sshd_config file
+# SixArm.com ➤ Secure Shell daemon (SSHd) ➤ sshd_config file
 
 
 ## Introduction
 
 Our SSH configuration files are in two repos:
 
-  * `sixarm_ssh_config` for the client configuration.
+  * `sixarm-ssh-config` for the client configuration.
 
-  * `sixarm_sshd_config` for the server configuration.
+  * `sixarm-sshd-config` for the server configuration.
 
 Take what you need. We welcome suggestions, feedback, and pull requests.
 
 
 ## Install
 
-To install this system-wide on a typical Unix system, you must have root administration permissions or similar kinds of sudo permissions.
+To install this system-wide on a typical Unix system, you must have root administration permissions, or similar kinds of sudo permissions.
 
-Warning: doing this is dangerous and can seriously affect your systems. If you don't understand the instructions below, then ask for help.
+Warning: doing this is dangerous and can seriously affect your systems, so if you don't understand the instructions below, then ask for help.
 
 Create your SSH directory as needed:
 
@@ -32,11 +32,11 @@ If so, then you may want to make a backup:
 
 Clone:
 
-    git clone https://github.com/sixarm/sixarm_sshd_config
+    git clone https://github.com/sixarm/sixarm-sshd-config
 
-Copy this content to your own SSH config file:
+Appen this content to your own SSH config file:
 
-    cat sixarm_sshd_config/sshd_config >> /etc/ssh/sshd_config
+    cat sixarm-sshd-config/sshd_config >> /etc/ssh/sshd_config
 
 Edit as you like, using your own favorite editor:
 
@@ -45,6 +45,7 @@ Edit as you like, using your own favorite editor:
 
 ## Changes
 
+* 2022-06-27 3.0.0 Rename repos
 * 2016-04-03 2.0.0 Improve usability
 * 2015-06-30 1.0.0 Publish
 
