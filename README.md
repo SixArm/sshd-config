@@ -1,4 +1,4 @@
-# SixArm.com ➤ Secure Shell daemon (SSHd) ➤ sshd_config file
+# SixArm.com → Secure Shell daemon (SSHd) → sshd_config file
 
 
 ## Introduction
